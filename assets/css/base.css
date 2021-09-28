@@ -1,0 +1,21 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+}
+*{
+    box-sizing: inherit;
+    user-select: var(--primary-color);
+}
+html{
+    font-size: 62.5%;
+    line-height:1.6rem;
+    font-family: 'Roboto' , sans-serif;
+    box-sizing: border-box;
+}
+::placeholder {
+    color:var(--black-color);
+    opacity: 1; /* Firefox */
+    font-size: 1.3rem;
+    line-height: 13px;
+    font-weight: 500;
+  }
