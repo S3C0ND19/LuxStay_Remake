@@ -186,10 +186,17 @@
                                     </div>
                                 </div>
                                 <div class="header__search-count">
-                                    <i class="header__search-count-icon fas fa-user-alt"></i>                      
+                                    <i class="header__search-count-icon fas fa-user-alt"></i>
+                                    <input type="checkbox" hidden class="header__check-count" id="header__check-count">
+                                    <label for="header__check-count">
+                                        <span class="header__search-count-text">Số khách</span>
+                                    </label>
+                                    <label for="header__check-count" class="header__overlay">
+                                    </label> 
+<!--                                                          
                                     <a href="" class="header__search-count-link">
                                         <span class="header__search-count-text">Số khách</span>
-                                    </a>
+                                    </a> -->
                                     <div class="header__search-order">
                                         <div class="header__search-order-age">
                                             <span class="header__search-order-text">Người lớn</span>
@@ -201,24 +208,29 @@
                                         </div>
                                         <div class="header__search-order-age">
                                             <span class="header__search-order-text">Trẻ em</span>
-                                            <span class="header__search-order-text-age">Tuổi từ 2-12</span>
                                             <div class="header__search-order-age-count">
                                                 <i class="header__search-order-icon ti-minus"></i>
                                                 <span class="header__search-order-age-count-text">0</span>
                                                 <i class="header__search-order-icon ti-plus"></i>
                                             </div>
+                                            <span class="header__search-order-text-age">Tuổi từ 2-12 tuổi</span>                                           
                                         </div>
                                         <div class="header__search-order-age">
                                             <span class="header__search-order-text">Trẻ sơ sinh</span>
-                                            <span class="header__search-order-text-age">Dưới 2 tuổi</span>
                                             <div class="header__search-order-age-count">
                                                 <i class="header__search-order-icon ti-minus"></i>
                                                 <span class="header__search-order-age-count-text">0</span>
                                                 <i class="header__search-order-icon ti-plus"></i>
                                             </div>
+                                            <span class="header__search-order-text-age">Dưới 2 tuổi</span>
                                         </div>
-                                    </div>
+                                        <div class="header__search-order-footer">
+                                            <span class="header__search-order-footer-delete">Xoá</span>
+                                            <span class="header__search-order-footer-apply">Áp dụng</span>
+                                        </div>
+                                    </div>           
                                 </div>
+
                                 <div class="header__search-btn">
                                     <button class="header__search-click" type="submit">
                                         <i class="ti-search"></i>
@@ -239,6 +251,7 @@
                                     <a href="" class="header__navigation-link">
                                         Host
                                     </a>
+                                    <i class=" header__navigation-item-icon fas fa-circle"></i>
                                 </li>
                                 <li class="header__navigation-item">
                                     <a href="" class="header__navigation-link">
