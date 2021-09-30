@@ -1,10 +1,16 @@
 :root{
     --white-color:#fff;
     --black-color:#000;
+    --max-width:1300px;
 }
 *{
     box-sizing: inherit;
     user-select: var(--primary-color);
+    
+}
+.max-width{
+    max-width:1300px;
+    margin: auto;
 }
 html{
     font-size: 62.5%;
@@ -18,4 +24,44 @@ html{
     font-size: 1.3rem;
     line-height: 13px;
     font-weight: 500;
-  }
+}
+.content__icon-first{
+    width: 56px;
+    height: 56px;
+    background-color: #cac7c0;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 43%;
+    left: 0;
+    margin-left: -32px;
+    opacity: 0.4;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+}
+.content__icon-left{
+    font-size:2rem;
+    color: var(--black-color);
+    transform: translateY(100%);
+  
+}
+.content__icon-second{
+    width: 56px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 43%;
+    right:0;
+    margin-right: -32px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+}
+.content__icon-right{
+    font-size:2rem;
+    color: var(--black-color);
+    transform: translateY(100%);
+}

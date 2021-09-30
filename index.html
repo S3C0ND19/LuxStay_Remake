@@ -26,7 +26,7 @@
                         <div class="header__wrap-left">
                             <a href="#" class="header__wrap-left-logo">
                                 <svg version="1.1" viewBox="0 0 50 50" style="width: 50px; height: 50px;">
-                                    <path  class="header__wrap-left-logo-icon" pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z">                       
+                                    <path fill="blackColor" class="header__wrap-left-logo-icon" pid="0" d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z">                       
                                     </path>
                                 </svg>
                             </a>
@@ -193,10 +193,6 @@
                                     </label>
                                     <label for="header__check-count" class="header__overlay">
                                     </label> 
-<!--                                                          
-                                    <a href="" class="header__search-count-link">
-                                        <span class="header__search-count-text">Số khách</span>
-                                    </a> -->
                                     <div class="header__search-order">
                                         <div class="header__search-order-age">
                                             <span class="header__search-order-text">Người lớn</span>
@@ -263,13 +259,52 @@
                                         Đăng nhập
                                     </a>
                                 </li>
-                            </ul>
+                            </ul>                       
                             <div class="header__amount">
-                                <div class="header__amount-convert">
+                                <input type="checkbox" hidden class="header__check-amount" id="header__check-amount">      
+                                <label class="header__amount-convert" for="header__check-amount">
                                     <img src="https://www.luxstay.com/icons/vi.svg" alt="" class="header__amount-convert-logo">
                                     <span class="header__amount-convert-text">VND</span>
                                     <i class="header__amount-convert-icon fas fa-sort-down"></i>
-                                </div>
+                                </label>
+                                <label for="header__check-amount" class="header__overlay">
+                                </label> 
+                                <div class="header__amount-language">
+                                    <div class="header__amount-nation">
+                                        <ul class="header__amount-nation-items">
+                                            <li class="header__amount-nation-list">
+                                                <img src="https://www.luxstay.com/icons/vi.svg" alt="" class="header__amount-nation-icon">
+                                                <span class="header__amount-nation-text">Tiếng Việt</span>
+                                                <i class="header__amount-nation-check fas fa-check"></i>
+                                            </li>
+                                            <li class="header__amount-nation-list">
+                                                <img src="https://www.luxstay.com/icons/en.svg" alt="" class="header__amount-nation-icon">
+                                                <span class="header__amount-nation-text">English</span>                                        
+                                            </li>
+                                            <li class="header__amount-nation-list">
+                                                <img src="https://www.luxstay.com/icons/ko.svg" alt="" class="header__amount-nation-icon">
+                                                <span class="header__amount-nation-text">Korean</span>                                              
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="currency">
+                                        <ul class="currency__items">
+                                            <li class="currency__list">
+                                                <div class="currency__list-wrap">
+                                                    <span class="currency__list-short">VND</span>
+                                                    <span class="currency__list-full">Việt Nam Đồng</span>
+                                                </div>
+                                                <i class="currency__list-icon fas fa-check"></i>
+                                            </li>
+                                            <li class="currency__list">
+                                                <div class="currency__list-wrap">
+                                                    <span class="currency__list-short">USD</span>
+                                                    <span class="currency__list-full">United States Dollar</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>                                
                             </div>
                         </div>
                     </div>
@@ -277,15 +312,293 @@
            </div>
         </header>
         <div class="slider">
-
+            <div class="mySlides fade">
+                <img src="https://beta-api.luxstay.net/api/upload/file?storage=admins/12/qF7ukmI--Rwr2H5LwzVZwcXa.jpg" alt="background" style="width:100%;border-radius:20px ;" >
+            </div>
+            <div class="mySlides fade">              
+                <img src="https://beta-api.luxstay.net/api/upload/file?storage=admins/12/90D5fOM9lCriVigTdM4ZxXjm.jpg" alt="background" style="width:100%;border-radius:20px ;">
+            </div>
+        </div>
+        <div  class="slider__dot">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
         </div>
         <div class="content">
+            <div class="content__welcome">
+                <span class="content__welcome-title">Chào mừng đến với Luxstay!</span>
+                <span class="content__welcome-sub">Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa trên Luxstay</span>
+                <div class="content__welcome-log">
+                    <span><a href="" class="content__welcome-link">Đăng nhập</a> hoặc <a href="" class="content__welcome-link">Đăng ký</a> để trải nghiệm !</span>
+                </div>
+            </div>
+            <div class="content__suggest">
+                <span class="content__suggest-title">Địa điểm nổi bật</span>
+                <span class="content__suggest-sub">Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn</span>
+                <div class="gid">
+                    <div class="row">
+                        <div class="col l-2-4 ">
+                           <div class="content__suggest-location">
+                               <a href="" class="content__suggest-link">
+                                    <img  src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="" class="content__suggest-img">
+                               </a>
+                               <div class="content__icon-first">
+                                    <i class="fas fa-angle-left content__icon-left"></i>
+                                </div>
+                               <div class="content__suggest-description">
+                                   <a href="" class="content__suggest-link">
+                                        <span class="content__suggest-description-title">Hà Nội</span>
+                                        <span class="content__suggest-description-sub">2757 Chỗ ở</span>
+                                   </a>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="col l-2-4 ">
+                            <div class="content__suggest-location">
+                                <a href="" class="content__suggest-link">
+                                    <img src="https://cdn.luxstay.com/home/location/location_5_1559735011.png" alt="" class="content__suggest-img">
+                                </a>
+                                <div class="content__suggest-description">
+                                    <a href="" class="content__suggest-link">
+                                        <span class="content__suggest-description-title">Hà Nội</span>
+                                        <span class="content__suggest-description-sub">2757 Chỗ ở</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 ">
+                            <div class="content__suggest-location">
+                                <a href="" class="content__suggest-link">
+                                    <img  src="https://cdn.luxstay.com/home/location/location_10_1559303118.png" alt="" class="content__suggest-img">
+                                </a>
+                                <div class="content__suggest-description">
+                                    <a href="" class="content__suggest-link">
+                                        <span class="content__suggest-description-title">Hà Nội</span>
+                                        <span class="content__suggest-description-sub">2757 Chỗ ở</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 ">
+                            <div class="content__suggest-location">
+                               <a href="" class="content__suggest-link">
+                                    <img src="https://cdn.luxstay.com/home/location/location_4_1559786177.png" alt="" class="content__suggest-img">
+                               </a>
+                                <div class="content__suggest-description">
+                                    <a href="" class="content__suggest-link">
+                                        <span class="content__suggest-description-title">Hà Nội</span>
+                                        <span class="content__suggest-description-sub">2757 Chỗ ở</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 ">
+                            <div class="content__suggest-location">
+                                <a href="" class="content__suggest-link">
+                                    <img src="https://cdn.luxstay.com/home/location/location_16_1559303173.png" alt="" class="content__suggest-img">
+                                </a>
+                                <div class="content__icon-second">
+                                    <i class="fas fa-angle-right content__icon-right"></i>
+                                </div>
+                                <div class="content__suggest-description">
+                                    <a href="" class="content__suggest-link">
+                                        <span class="content__suggest-description-title">Hà Nội</span>
+                                        <span class="content__suggest-description-sub">2757 Chỗ ở</span>
+                                   </a>
+                                </div>
+                            </div>                       
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content__bonus max-width">
+                <span class="content__bonus-title">Ưu đãi độc quyền</span>
+                <div class="content__bonus-sub">
+                    <span class="content__bonus-sub-text">Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!</span>
+                    <a href="" class="content__bonus-link">
+                        <span>Xem thêm</span>
+                    </a>
+                </div>                
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-4">
+                            <img src="https://cdn.luxstay.com/home/event/event_1_1627881441.jpg" alt="" class="content__bonus-img">
+                        </div>
+                        <div class="col l-4">
+                            <img src="https://cdn.luxstay.com/home/event/event_1_1614658965.jpg" alt="" class="content__bonus-img">
+                        </div>
+                        <div class="col l-4">
+                            <img src="https://cdn.luxstay.com/home/event/event_1_1596604498.jpg" alt="" class="content__bonus-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__propose max-width">
+                <span class="content__propose-title">Gợi ý từ Luxstay</span>
+                <span class="content__propose-sub"> Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn</span>
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-3">                          
+                            <div class="content__propose-posts">
+                                <a href="" class="content__propose-link">
+                                    <img src="https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg" alt="" class="content__propose-posts-img">
+                                    <div class="content__propose-posts-description">
+                                        <span class="content__propose-posts-title">VI VU NGOẠI THÀNH HÀ NỘI</span>
+                                        <span class="content__propose-posts-sub">Trải nghiệm không gian thoáng đãng cho chuyến đi ngay gần Hà Nội</span>
+                                    </div>
+                                </a>                                
+                            </div>
+                        </div>
+                        <div class="col l-3">                          
+                            <div class="content__propose-posts">
+                                <a href="" class="content__propose-link">
+                                    <img src="https://cdn.luxstay.com/home/apartment/apartment_2_1614588617.jpg" alt="" class="content__propose-posts-img">
+                                    <div class="content__propose-posts-description">
+                                        <span class="content__propose-posts-title">Vũng Tàu Biệt thự hồ bơi</span>
+                                        <span class="content__propose-posts-sub">Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn tại Vũng Tàu</span>
+                                    </div>
+                                </a>                                
+                            </div>
+                        </div>
+                        <div class="col l-3">                          
+                            <div class="content__propose-posts">
+                                <a href="" class="content__propose-link">
+                                    <img src="https://cdn.luxstay.com/home/apartment/apartment_1_1614660728.jpg" alt="" class="content__propose-posts-img">
+                                    <div class="content__propose-posts-description">
+                                        <span class="content__propose-posts-title">Hà Nội nội thành lãng mạn</span>
+                                        <span class="content__propose-posts-sub">Không gian lãng mạn dành cho cặp đôi tại trung tâm Hà Nội</span>
+                                    </div>
+                                </a>                                
+                            </div>
+                        </div>
+                        <div class="col l-3">                          
+                            <div class="content__propose-posts">
+                                <a href="" class="content__propose-link">
+                                    <img src="https://cdn.luxstay.com/home/apartment/apartment_2_1615794965.jpg" alt="" class="content__propose-posts-img">
+                                    <div class="content__propose-posts-description">
+                                        <span class="content__propose-posts-title">Sài Gòn cần là có ngay</span>
+                                        <span class="content__propose-posts-sub">Những căn homestay có 01 phòng ngủ tại Sài Gòn có thể đặt nhanh chóng</span>
+                                    </div>
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__discover max-width">
+                <span class="content__discover-title">Gợi ý khám phá</span>
+                <span class="content__discover-sub">Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên</span>
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-4">
+                            <div class="content__discorver-info">
+                                <a href="" class="content__discover-link">
+                                    <img src="https://media.travelmag.vn/files/thanhtam/2020/04/03/1-1417.jpg" alt="" class="content__discover-img">
+                                    <div class="content__discorver-description">
+                                        <a href="" class="content__discorver-description-link">
+                                            THÔNG TIN HOMESTAY
+                                        </a>
+                                        <a href="" class="content__discorver-description-title">
+                                            <span>5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh</span>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col l-4">
+                            <div class="content__discorver-info">
+                                <a href="" class="content__discover-link">
+                                    <img src="https://storage.googleapis.com/vinpearl-data-01/dia-diem-du-lich-can-tho-2.jpg" alt="" class="content__discover-img">
+                                    <div class="content__discorver-description">
+                                        <a href="" class="content__discorver-description-link">
+                                            THÔNG TIN HOMESTAY
+                                        </a>
+                                        <a href="" class="content__discorver-description-title">
+                                            <span>Du lịch Cần Thơ nhất định phải ghé thăm những địa điểm này</span>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col l-4">
+                            <div class="content__discorver-info">
+                                <a href="" class="content__discover-link">
+                                    <img src="https://photo-cms-plo.zadn.vn/w800/Uploaded/2021/zaaekt/2020_03_24/toi-yeu-banh-mi__eafb.png" alt="" class="content__discover-img">
+                                    <div class="content__discorver-description">
+                                        <a href="" class="content__discorver-description-link">
+                                            TP. Hồ Chí Minh
+                                        </a>
+                                        <a href="" class="content__discorver-description-title">
+                                            <span>Tuần lễ “Tôi yêu bánh mì Sài Gòn” chính thức diễn ra từ ngày 24/3</span>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div class="footer">
-            
+
+        <div class="footer">           
         </div>
     </div>
 
 </body>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides,600000); 
+        }
+    </script>
+    <script>
+        var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
 </html>

@@ -1,14 +1,15 @@
 .header__wrap{
     display: flex;
-    height: 70px;
+    height: 80px;
     padding: 0 43px;
-    border-bottom:1px solid var(--black-color) ;    
+    border-bottom:1px solid #dbdbdb ;    
+    box-sizing: border-box;
 
 }
 .header__wrap-left{
    display: flex;
    align-items: center;
-    height:70px;
+    height:80px;
 }
 .header__wrap-left-logo{
   margin-right: 15px;
@@ -27,20 +28,28 @@
 }
 .header__search-form-input{
     width: 300px;
-    height:100%;
+    height: 100%;
     border: none;
     padding-left: 40px;
-    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
 
 }
-input[type=text]:focus{
-    outline: 3px solid #dbdbdb  ; 
+.header__search-form-input:focus{
+    box-shadow: 0 0 3pt 2pt #dbdbdb;
 
+}
+input:focus {
+    border: none;
+    border-radius: 4pt;
+    box-shadow: 0 0 0 1pt grey;
+    outline: none;
+    transition: .1s;   
 }
 .header__search-form-icon{
     position: absolute;
     font-size: 1.4rem;
-    padding-top: 14px;
+    padding-top: 17px;
     padding-left: 14px;
 }
 .header__search-date{
@@ -85,7 +94,7 @@ input[type=text]:focus{
     top : 50%;
     height: 30px;
     transform: translateY(-50%);
-    left:-1px;
+    left:0px;
 }
 
 /* sub date */
@@ -101,6 +110,7 @@ input[type=text]:focus{
     border-radius: 5px;
     display: none;
     /* display: flex; */
+    z-index: 1;
 }
 .date__sub-left{
     width: 50%;
@@ -207,6 +217,9 @@ input[type=text]:focus{
     font-weight: 500;
     cursor: pointer;
 }
+.header__search-date-text:focus .header__search-date{
+    background-color:red;
+}
 .header__search-count{
     height: 100%;
     padding-left: 22px;
@@ -240,6 +253,7 @@ input[type=text]:focus{
     padding-left: 15px;
     padding-bottom: 15px;
     display:none;
+    z-index: 1;
 }
 .header__check-count:checked ~ 
 .header__search-order {
@@ -315,7 +329,7 @@ input[type=text]:focus{
 
 .header__navigation{
     display: flex;
-    height: 70px;
+    height: 80px;
     max-width: 60%;
     margin-left: auto;
     position: relative;
@@ -333,7 +347,7 @@ input[type=text]:focus{
     text-decoration: none;
     width: 25%;
     font-size: 1.4rem;
-    line-height: 70px;
+    line-height: 80px;
     color: #333;
     font-weight: 500;
     position: relative;
@@ -350,7 +364,7 @@ input[type=text]:focus{
 }
 .header__amount{
     height: 35px;
-    margin-top: 18px;
+    margin-top: 22px;
     border-radius: 2rem;
     background-color: #f6f6f6; 
     padding: 0 10px;
@@ -358,6 +372,7 @@ input[type=text]:focus{
 .header__amount-convert{
     display: flex;
     height: 35px;
+    position: relative;
 }
 .header__amount-convert-logo{
     width:2.4rem;
@@ -376,4 +391,97 @@ input[type=text]:focus{
     cursor: pointer;
 }
 /* sub amount */
-  
+.header__amount-language{
+    position: absolute;
+    display: none;
+    top: 62px;
+    left: 0;
+    right:0;
+    margin-left: -30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius:2px;   
+    z-index: 1;
+}
+.header__amount-language::after{
+    content:"";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px;
+    border-color: transparent transparent var(--white-color) transparent;
+    right:25px;
+    top:-25px;
+}
+.header__amount-nation{
+    width:50%;
+    position: relative;
+}
+.header__amount-nation::after{
+    position: absolute;
+    content:"";
+    border-right: 0.1px solid #dbdbdb ;
+    top : 50%;
+    height: 140px;
+    transform: translateY(-50%);
+    right: -1px;
+}
+.header__amount-nation-items{
+    padding: 0;
+}
+.header__amount-nation-list{
+    list-style: none;
+    padding: 12px;
+}
+.header__amount-nation-icon{
+    width:16px;
+    height: 16px;
+   
+}
+.header__amount-nation-text{
+    font-size: 1.6rem;
+    padding: 0 10px;
+}
+.header__amount-nation-text:hover{
+    color: #fb9236;
+    cursor: pointer;
+}
+.currency{
+    width:50%;
+}
+.currency__items{
+    padding: 0;
+}
+.currency__list{
+    list-style: none;
+    padding: 14px;
+   
+}
+.currency__list-short{
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+.currency__list-full{
+    font-size: 1.6rem;
+    padding: 0 10px;
+}
+.currency__list-wrap{
+    display: inline-block;
+}
+.currency__list-wrap:hover{
+    color: #fb9236;
+    cursor: pointer;
+}
+.header__check-amount:checked ~ 
+.header__amount-language {
+    display: flex;
+    cursor: pointer;;
+}
+.header__check-amount:checked ~ 
+.header__overlay {
+    display: block;
+    cursor: pointer;
+}
+.header__wrap-left-logo-icon:hover{
+   fill:#f65e39;
+}
