@@ -1,8 +1,3 @@
-
-.footer{
-
-}
-
 .footer__contact-messages{
     display: flex;
     align-items: center;
@@ -86,9 +81,6 @@
     margin-left: 35%;
 }
 
-.footer__certification{
-    
-}
 .footer__certification-img{
     width: 93px;
     object-fit: cover;
@@ -107,4 +99,19 @@
 .footer__social-icon{
     font-size: 2.5rem;
     height:35px;
+}
+.footer__copyright{
+    padding: 24px 15px;
+    border-top:1px solid #dbdbdb;
+}
+
+.footer__copyright-text{
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing:0.8;
+    color: #aea9b7;
+}
+.footer__copyright-text:nth-child(2){
+    padding: 8px 0;
 }
