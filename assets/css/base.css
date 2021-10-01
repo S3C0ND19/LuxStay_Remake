@@ -3,6 +3,7 @@
     --black-color:#000;
     --max-width:1300px;
     --primary-color:#f65e39;
+    --header-wrap-search:60px;
 }
 *{
     box-sizing: inherit;
