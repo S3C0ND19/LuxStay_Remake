@@ -3,7 +3,65 @@
     .nav__bar-btn{
         display: block;
     }
+    .margin__mobile{
+        margin: 0 24px;
+    }
+    .content__suggest-wrap{
+        overflow: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .content__suggest-wrap::-webkit-scrollbar{
+        display: none;
+    }
+    .content__bonus-wrap-img{
+        overflow: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .content__bonus-wrap-img::-webkit-scrollbar{
+        display: none;
+    }
+    .content__propose-wrap{
+        overflow: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .content__propose-wrap::-webkit-scrollbar{
+        display: none;
+    }
+    .content__propose-posts-sub{
+        font-size: 1.8rem;
+        display: block;
+        word-wrap: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+    .content__discover-wrap{
+        overflow: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .content__discover-wrap::-webkit-scrollbar{
+        display: none;
+    }
+    .content__guide-wrap{
+        overflow: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .content__guide-wrap::-webkit-scrollbar{
+        display: none;
+    }
 }
+
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet{
@@ -17,9 +75,6 @@
     }
     .date__sub-right{
         margin-left:20px;
-    }
-    .header__search-order{
-
     }
     .header__wrap-left-search{
         width: 550px;
@@ -51,9 +106,40 @@
     .header__search-form-icon{
         padding-top: 24px;
     }
+    .header__search-btn{
+        margin: auto -6px;
+    }
+    .content__icon-first{
+        margin-left: -20px;
+    }
+    .content__discorver-info{
+        height: 400px;
+    }
+    .row__wrap{
+        flex-wrap: wrap;
+    }
+    .content__download-app{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .content__download-app-mobile-img{
+        width: 30%;       
+    }
+    .footer__transition{
+        margin: 0;
+    }
+    .footer__summary{
+        margin-left: 0;
+    }
+    .footer__transition-wrap{
+        display: flex;
+    }
+    .footer__transition-wrap img{
+        width: 75px;
+    }
 }
 /* Mobile */
-@media (max-width: 739px){
+@media (max-width: 740px){
     .hide-on-mobile{
         display: none;
     }

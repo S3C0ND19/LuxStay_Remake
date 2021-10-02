@@ -116,3 +116,6 @@
 .footer__copyright-text:nth-child(2){
     padding: 8px 0;
 }
+.footer__certification-img:first-child{
+    margin-right: 10px;
+}

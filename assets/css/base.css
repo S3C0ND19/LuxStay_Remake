@@ -14,6 +14,9 @@
     max-width:1300px;
     margin: auto;
 }
+.main{
+    overflow: hidden;
+}
 html{
     font-size: 62.5%;
     line-height:1.6rem;

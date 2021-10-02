@@ -550,12 +550,12 @@ input:focus {
 }
 .nav__mobile-close{
     position: absolute;
-    top:0.8rem;
+    top:2rem;
     right:1.8rem;
 }
 .nav__mobile-close-icon{
-    color:#9f9f9f;
-    font-size: 4rem;
+    color:var(--black-color);
+    font-size: 3rem;
 }
 .nav__mobile-money-list{
     display: flex;
