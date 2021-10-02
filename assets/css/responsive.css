@@ -3,8 +3,16 @@
     .nav__bar-btn{
         display: block;
     }
-    .margin__mobile{
-        margin: 0 24px;
+    .nav__bar-btn-icon{
+        font-size: 30px;
+    }
+    .nav__bar-btn{
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+    }
+    .row__wrap{
+        flex-wrap: wrap;
     }
     .content__suggest-wrap{
         overflow: auto;
@@ -64,6 +72,9 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    .margin__tablet{
+        margin: 0 24px;
+    }
     .hide-on-tablet{
         display: none;
     }
@@ -79,14 +90,6 @@
     .header__wrap-left-search{
         width: 550px;
         height: var(--header-wrap-search);
-    }
-    .nav__bar-btn{
-        display: flex;
-        align-items: center;
-        margin: 0 10px;
-    }
-    .nav__bar-btn-icon{
-        font-size: 25px;
     }
     .header__search-form-input{
         width:270px;
@@ -115,9 +118,6 @@
     .content__discorver-info{
         height: 400px;
     }
-    .row__wrap{
-        flex-wrap: wrap;
-    }
     .content__download-app{
         margin-top: 20px;
         margin-left: 40px;
@@ -137,11 +137,126 @@
     .footer__transition-wrap img{
         width: 75px;
     }
+    .content__discorver-description-title{
+        font-size: 2rem;
+    }
+    .footer__copyright-text{
+        line-height: 20px;
+    }
+    .footer__download-mobile-img{
+        width: 172px;
+        height: 52px;
+        display: block;
+    }
+    
 }
 /* Mobile */
 @media (max-width: 740px){
     .hide-on-mobile{
         display: none;
+    }
+    .margin__mobile{
+        margin: 0 18px;
+    }
+    .header__wrap{
+        padding: 0 20px;
+    }
+    .header__wrap-left-search{
+        width: 300px;
+    }
+    .slider{
+        margin-top: 100px;
+    }
+    .content{
+        padding-top: 35px;
+    }
+    .content__welcome{
+        width: unset;
+    }
+    .content__welcome-title{
+        line-height: 28px;
+    }
+    .content__suggest-sub{
+        line-height: 20px;
+    }
+    .content__bonus-sub-text{
+        line-height: 20px;
+    }
+    .content__bonus-on-mobile{
+        display: block;
+        margin-top:20px;
+    }
+    .content__propose{
+        padding-bottom: 50px;
+    }
+    .content__propose-sub{
+        line-height: 20px;
+        padding: 5px 0 25px 0;
+    }
+    .content__discorver-info{
+        height: 180px;
+    }
+    .content__discorver-description-link{
+        width: 155px;
+        font-size:1.2rem;
+    }
+    .content__discorver-description-title{
+        white-space: initial;
+        width:100%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    .content__download-logo{
+        width: 200px;
+    }
+    .content__download-description-title{
+        font-size: 2.3rem;
+    }
+    .content__download-description-sub{
+        margin-top: 0;
+        text-align: justify;
+        line-height: 22px;
+    }
+    .content__download-app{
+        margin-top: 20px;
+    }
+    .content__download-app-mobile{
+        margin-left: 0;
+    }
+    .content__download-app-mobile-img{
+        margin-bottom: 20px;
+    }
+    .content__download-illustration{
+        padding-top: 20px;
+    }
+    .footer__transition{
+        margin-left: 0;
+    }
+    .footer__summary{
+        margin-left: 0;
+    }
+    .footer__social{
+        margin-left: 5px;
+    }
+    .footer__title--mobile{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .footer__certification{
+        margin: 30px 0;
+    }
+    .footer__certification-img{
+        width: 150px;
+    }
+    .footer__social-icon{
+        font-size:3rem;
+    }
+    .footer__social-link:nth-child(3){
+        margin: 0 15px;
+    }
+    .row__wrap--mobile{
+        flex-wrap: wrap;
     }
 
 }

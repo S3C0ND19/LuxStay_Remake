@@ -5,12 +5,11 @@
     max-width: 1300px;
 }
 .slider__dot{
-   text-align:center;
-   position: absolute;
-   right: 150px;
-   bottom:50px;
-   width: auto;
-   top : 50%;
+    text-align: center;
+    position: absolute;
+    width: auto;
+    right: 36px;
+    bottom: 10px;
 }
 .dot {
     height: 8px;
@@ -356,4 +355,7 @@ img {
 .content__download-illustration-img{
     width: 100%;
     height: 100%;
-} 
+}
+.content__bonus-on-mobile{
+    display: none;
+}
